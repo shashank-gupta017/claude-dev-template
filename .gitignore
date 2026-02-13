@@ -1,0 +1,47 @@
+#### .gitignore ####
+
+# Environment secrets — never commit these
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Test & coverage artifacts
+coverage/
+.nyc_output/
+.pytest_cache/
+htmlcov/
+
+# Logs
+*.log
+logs/
+
+# Infra state — keep .tfstate out of git; use remote state (S3, Terraform Cloud)
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Claude session artifacts (optional — remove if you want to commit CONTEXT.md)
+# CONTEXT.md
+
+.idea
